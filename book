@@ -1,0 +1,25 @@
+class Book {
+    String title="the reformation";
+    String author="o.henry";
+    public Book()
+   {
+   System.out.println("title:"+title);
+   System.out.println("author:"+author);
+   }
+    public Book(String mytitle,String myauthor);
+    {
+        this.title=mytitle;
+        this.author=myauthor;
+        System.out.print("title"+mytitle);
+        System.out.print("author"+myauthor);
+        
+    }
+    public static void main(String[] args) {
+        Book a=new Book();
+        Book b=new Book("the reformation","o.Henry");
+         Book c=new Book("hello world","abc");
+        
+        
+        
+    }
+} 
