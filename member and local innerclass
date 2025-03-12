@@ -1,0 +1,26 @@
+class computer
+{
+    void display(){
+        System.out.println("method from computer ");
+        class comp 
+          {
+              void safe(){
+                  System.out.println("safe");
+              }
+          }
+          comp l=new comp();
+              l.safe();
+    }
+    class processor{
+        void show(){
+            System.out.println("method form processor");
+        }
+        
+        public static void main (String[] args) {
+            computer c=new computer();
+            c.display();
+            computer.processor p=c.new processor();
+            p.show();
+        }
+    }
+}
